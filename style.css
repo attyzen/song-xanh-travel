@@ -41,4 +41,35 @@ h1, h2, h3 { line-height: 1.2; }
 .book { text-align: center; padding: 70px 5vw; }
 .book p { color: var(--muted); }
 .row { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; margin-top: 20px; }
+.top nav { display: flex; align-items: center; gap: 18px; }
+.top nav a:not(.btn) { color: var(--ink); font-weight: 600; text-decoration: none; }
+.top nav a:not(.btn):hover { color: var(--sea); }
+@media (max-width: 520px) { .top nav a:not(.btn) { display: none; } }
+
+.packages { padding: 30px 5vw 60px; max-width: 1200px; margin: 0 auto; }
+.packages h2 { font-size: clamp(26px, 3.5vw, 36px); text-align: center; }
+.tiers { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 22px; align-items: stretch; }
+.tiers article { display: flex; flex-direction: column; background: #fff; border-radius: 20px; padding: 26px; box-shadow: 0 10px 30px rgba(10,166,181,.12); }
+.tiers article.hot { box-shadow: inset 0 0 0 3px var(--sun), 0 16px 40px rgba(255,122,26,.25); }
+.tiers h3 { margin: 10px 0 8px; font-size: 24px; color: var(--sea); }
+.tiers ul { flex: 1; margin: 0 0 22px; padding-left: 20px; color: var(--muted); }
+.tiers li { margin: 6px 0; }
+.tiers .btn { text-align: center; }
+
+.cards a { display: block; color: inherit; text-decoration: none; }
+.cards a:hover h3 { text-decoration: underline; }
+.center { text-align: center; }
+.more { text-align: center; margin-top: 26px; }
+.more a, .post a { color: var(--sea); font-weight: 700; }
+
+.post { max-width: 760px; margin: 0 auto; padding: 40px 5vw 30px; }
+.post h1 { font-size: clamp(28px, 4vw, 40px); }
+.post h2 { margin-top: 32px; color: var(--sea); }
+.post img { border-radius: 20px; margin: 20px 0; }
+.post .meta { color: var(--muted); font-size: 14px; }
+.post .cta { margin: 36px 0 10px; padding: 26px; background: #fff; border-radius: 20px; text-align: center; box-shadow: 0 10px 30px rgba(10,166,181,.12); }
+.post .cta .btn { color: #fff; }
+.crumbs { font-size: 14px; color: var(--muted); }
+.crumbs a { color: var(--muted); }
+
 footer { text-align: center; padding: 24px; color: var(--muted); font-size: 14px; }
